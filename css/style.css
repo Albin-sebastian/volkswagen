@@ -14,6 +14,7 @@ body {
 header {
   background-color: black;
   padding: 34px 78px;
+
 }
 
 header .logo img {
@@ -56,4 +57,34 @@ header nav {
 
 .navbar li.active a {
   border-bottom: 2px solid #f70142;
+}
+
+/* hero */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero-info {
+  position: absolute;
+  /* method 1
+  top: 50%;
+  left: 78px;
+  transform: translateY(-50%); */
+
+  /* method 2 */
+  top: 0;
+  left: 78px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 1px solid red;
+}
+
+.hero-info h1 {
+  color: #fff;
 }
