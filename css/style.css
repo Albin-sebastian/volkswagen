@@ -80,8 +80,8 @@ header nav {
 
 .hero-info {
   position: absolute;
-  /* method 1
-  top: 50%;
+  /* method 1*/
+  /* top: 50%;
   left: 78px;
   transform: translateY(-50%); */
 
@@ -92,9 +92,33 @@ header nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+  max-width: 405px;
+}
+
+.hero-info a {
+  /* method-2 */
+  max-width: fit-content;
+  display: inline-block;
 }
 
 .hero-info h1 {
   color: #fff;
+  font-size: 74px;
+  font-weight: 900;
+}
+
+.hero .hero-info h1 span {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 74px;
+}
+
+.hero .hero-info .cta-btn {
+  background: #f70142;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 24px;
 }
