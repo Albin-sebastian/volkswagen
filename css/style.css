@@ -8,12 +8,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+
 }
 
 /* header */
 header {
   background-color: black;
-  padding: 34px 78px;
+  padding: 20px 78px 34px 78px;
   position: absolute;
   /* body position:reletive */
   z-index: 2;
@@ -27,10 +28,14 @@ header {
 
 }
 
+
+
 header .logo img {
   width: 79px;
   /* background-color: black; */
 }
+
+
 
 header nav {
   display: flex;
@@ -38,10 +43,16 @@ header nav {
   align-items: center;
 }
 
-.navbar ul {
+header nav .fa-bars {
+  display: none;
+}
+
+.navbar .menu {
   display: flex;
   list-style: none;
 }
+
+
 
 .navbar a {
   text-decoration: none;
@@ -71,7 +82,12 @@ header nav {
 
 /* hero */
 .hero {
+  /* width: 100%; */
+  /* max-height: 100vh; */
   position: relative;
+  height: 100vh;
+  /* overflow: hidden; */
+  display: none;
 }
 
 .hero img {
@@ -106,12 +122,21 @@ header nav {
   color: #fff;
   font-size: 74px;
   font-weight: 900;
+  margin-bottom: 28px;
 }
 
 .hero .hero-info h1 span {
   font-size: 38px;
   font-weight: 400;
+  display: block;
   line-height: 74px;
+}
+
+.hero-info p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 28px;
 }
 
 .hero .hero-info .cta-btn {
@@ -121,4 +146,34 @@ header nav {
   font-weight: 700;
   padding: 12px 30px;
   border-radius: 24px;
+  transition: background-color ease 0.5s;
+}
+
+.hero .hero-info .cta-btn:hover {
+  background-color: black;
+}
+
+.hero .swiper-pagination {
+  bottom: 120px;
+  background-color: blueviolet;
+  /* method 1 */
+  /* text-align: right;
+  left: auto;
+  right: 78px; */
+  text-align: right;
+  padding-right: 78px;
+
+}
+
+.hero .swiper-pagination .swiper-pagination-bullet {
+  width: 23px;
+  height: 23px;
+  background: transparent;
+  border: 2px solid #fff;
+  opacity: 1;
+  outline: none;
+}
+
+.hero .swiper-pagination .swiper-pagination-bullet-active {
+  border: 2px solid #f70142;
 }
