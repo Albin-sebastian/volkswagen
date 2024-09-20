@@ -30,3 +30,8 @@ const swiper = new Swiper('.swiper', {
 
 
 // mobile menu.
+const mobileMenuIcon = document.querySelector('header .fa-bars');
+const menu = document.querySelector('header .menu');
+mobileMenuIcon.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
